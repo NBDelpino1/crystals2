@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CrystalCollector</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Chango|Fascinate|Fascinate+Inline|Limelight|Megrim|Open+Sans:300|Racing+Sans+One" rel="stylesheet">
+    <link href=https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="assets/css/newstyle2.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="container control-board">
+    <div class="row">
+        <div class="col s12" ><h1 class="center-align">Crystal Collector Game</h1></div>
+        <div class="col s6">
+            <div class="col s6">
+                <div>
+                    <a class="waves-effect waves-light btn-large z-depth-0 crystalButton" id="red"><img src="assets/img/red.svg" class="responsive-img clickable-diamond"></a>
+                </div>
+                <div>
+                    <a class="waves-effect waves-light btn-large z-depth-0 crystalButton" id="yellow"><img src="assets/img/yellow.svg" class="responsive-img clickable-diamond"></a>
+                </div>
+            </div>
+            <div class="col s6">
+                <div>
+                    <a class="waves-effect waves-light btn-large z-depth-0 crystalButton" id="blue"><img src="assets/img/blue.svg" class="responsive-img"></a>
+                </div>
+                <div>
+                    <a class="waves-effect waves-light btn-large z-depth-0 crystalButton" id="purple"><img src="assets/img/purple.svg" class="responsive-img"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col s6 ">
+
+            <div class="col s6">
+                <div id="displayArea3">
+                    <img src="assets/img/rectangle-turq.svg" alt="" class="responsive-img">
+                    <div class="caption">
+                        <h6 class="display-heading">Your Score</h6>
+                        <h4 id="yourScore" class="display-result"></h4>
+                    </div>
+                </div>
+                <div id="displayArea4">
+                    <img src="assets/img/rectangle-blue.svg" alt="" class="responsive-img">
+                    <div class="caption">
+                        <h6 class="display-heading">Target Score</h6>
+                        <h4  id="targetNum" class="display-result"></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div id="displayArea1">
+                    <img src="assets/img/rectangle-green.svg" alt="" class="responsive-img">
+                    <div class="caption">
+                        <h6 class="display-heading">Num Win</h6>
+                        <h4  id="numWin" class="display-result"></h4>
+                    </div>
+                </div>
+                <div id="displayArea2">
+                    <img src="assets/img/rectangle-pink.svg" alt="" class="responsive-img">
+                    <div class="caption">
+                        <h6 class="display-heading">Num Loss</h6>
+                        <h4 id="numLoss" class="display-result"></h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row center-align">
+        <div class="col s12">
+            <div>
+                <a class="waves-effect waves-light btn-large rounded-button" id="startButton">Start Game</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row center-align">
+        <div class="col s12">
+            <div>
+                <a class="waves-effect waves-light btn z-depth-0" id="instructions-btn" href="#modal1">Click here for instructions</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!--MODALS-->
+<!-- Instructions Modal Trigger -->
+
+
+<!-- Instructions Modal -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <img src="assets/img/logo.png" class="responsive-img">
+        <h4>Instructions</h4>
+        <p>1. Click on any of the 4 cystals to the LEFT</p>
+        <p>2. Each one has a randon value</p>
+        <p>3. The game has it's own random value which you must match</p>
+        <p>4. Keep clicking the crystals until you match the winning number - and you win</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+    </div>
+</div>
+
+<!-- Win Alert Modal -->
+<div id="modal3" class="modal">
+    <div class="modal-content center-align">
+        <img src="assets/img/logo.png" class="responsive-img">
+        <h5>Congratulations. You Won!</h5>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+    </div>
+</div>
+
+<!-- Loose Alert Modal -->
+<div id="modal2" class="modal">
+    <div class="modal-content center-align">
+        <img src="assets/img/logo.png" class="responsive-img">
+        <h5>Out of luck. The winning number was <span class="modalNum" id="magicNum"></span>. You got <span class="modalNum" id="yourNum"></span>.</h5>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+    </div>
+</div>
+
+
+<audio id="button-sound-effect">
+    <source src="assets/audio/button-soundeffect.mp3" type="audio/mpeg">
+</audio>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<!---------- My Scripts ---------->
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

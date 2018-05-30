@@ -1,0 +1,74 @@
+body{
+    font-family: 'Limelight', cursive;
+    /*font-family: 'Open Sans', sans-serif;*/
+}
+
+#displayArea1, #displayArea2, #displayArea3, #displayArea4{
+    position: relative;
+    display: inline-block;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+h4{
+    margin-top:0;
+}
+
+.crystalButton {
+    height:100%;
+    background-color: #fff;
+    padding-left:0;
+    padding-right:0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.crystalButton:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+#instructions-btn{
+    background-color: rgba(0, 0, 0, 0.01);
+    -webkit-border-radius:30px !important;
+    -moz-border-radius:30px !important;
+    border-radius:30px !important;
+    color: #000000;
+}
+
+
+#startButton {
+    width:250px;
+    margin-top:20px;
+    background-color: #4386fc;
+    text-transform: none;
+    -webkit-border-radius:30px !important;
+    -moz-border-radius:30px !important;
+    border-radius:30px !important;
+}
+
+.modal{
+    -webkit-border-radius:30px !important;
+    -moz-border-radius:30px !important;
+    border-radius:30px !important;
+}
+
+h1{
+    color: #10203d;
+}
+
+
+.display-result{
+    color: #20293d;
+}
+
+.resultsWrapper {
+    display: none;
+}

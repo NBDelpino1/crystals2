@@ -1,0 +1,40 @@
+
+<svg width="200px" height="135px" viewBox="0 0 200 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="200" height="135" rx="30"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#9DDA21" offset="0%"></stop>
+            <stop stop-color="#63B30E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#A5E224" offset="0%"></stop>
+            <stop stop-color="#6CC210" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#84BE1A" offset="0%"></stop>
+            <stop stop-color="#4C8A0B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-17" transform="translate(-793.000000, -82.000000)">
+            <g id="Group-16" transform="translate(83.000000, 80.000000)">
+                <g id="Group-14" transform="translate(710.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#D8D8D8" xlink:href="#path-1"></use>
+                    <g mask="url(#mask-2)">
+                        <g transform="translate(-2.000000, -3.000000)">
+                            <rect id="Rectangle-4" fill="url(#linearGradient-3)" x="0" y="0" width="205" height="140"></rect>
+                            <rect id="Rectangle-4" fill="url(#linearGradient-4)" x="25.625" y="30.6569343" width="153.75" height="79.7080292"></rect>
+                            <polygon id="Path-3" fill="url(#linearGradient-5)" points="25.625 30.6569343 0 0 0 140 25.625 110.364964"></polygon>
+                            <polygon id="Path-3" fill="url(#linearGradient-5)" transform="translate(192.187500, 70.000000) scale(-1, 1) translate(-192.187500, -70.000000) " points="205 30.6569343 179.375 0 179.375 140 205 110.364964"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
